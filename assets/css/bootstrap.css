@@ -1366,6 +1366,10 @@ progress {
     flex: 0 0 auto;
     width: 16.66666667%;
   }
+  .col-lg-2-5 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
 
   .col-lg-3 {
     flex: 0 0 auto;
@@ -7470,6 +7474,14 @@ textarea.form-control-lg {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+}
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+.py-7 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
 }
 
 .pt-0 {
