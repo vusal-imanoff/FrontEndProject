@@ -172,7 +172,7 @@
             .view_product{
     
                 .view_product_box{
-                    height: 380px;
+                    height: 420px;
                     .view_product_position{
                         bottom: 3%;
                         span{
@@ -222,6 +222,7 @@
     }
     .product_list{
         .view_product_box{
+            height: 420px !important;
             .product_main{
                     .view_product_position{
                         bottom: 3% !important;
@@ -244,6 +245,26 @@
     .product_imglink{
         .imglink_box{
             margin-bottom: 10px;
+        }
+    }
+
+    .shop_mobile{
+        display: block !important;
+    }
+    .section_first{
+        .section_left{
+            display: none;
+        }
+
+        .section_right{
+            .section_right_top{
+                .section_right_top_mob{
+                    display: block !important;
+                }
+                .section_right_top_desk{
+                    display: none;
+                }
+            }
         }
     }
 }
