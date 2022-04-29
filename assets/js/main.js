@@ -284,4 +284,45 @@ $('.product_bottom').slick({
 
 
 
+let buttons = document.querySelectorAll('.tab_links a')
+let content = document.querySelectorAll('.tab_content .tabix')
+
+console.log(content)
+for (let btn of buttons) {
+    btn.addEventListener('click', function (e) {
+        e.preventDefault()
+        let active = document.querySelector(".active");
+        active.classList.remove("active")
+        this.classList.add('active')
+
+        let index = this.getAttribute('data-index')
+
+        for (let div of content) {
+            if (div.getAttribute('data-index') == index) {
+                div.classList.remove('d-none')
+            }
+            else {
+                div.classList.add('d-none')
+            }
+        }
+    })
+}
+
+$(document).ready(function () {
+  $(".plus").click(function (event) {
+    event.preventDefault();
+    let count=$(".input_text").val();
+    count++;
+    $(".input_text").val(count);
+  });
+  $(".minus").click(function (event) {
+    event.preventDefault();
+    let count=$(".input_text").val();
+    if(count>1){
+      count--;
+    }
+    $(".input_text").val(count)
+  });
+});
+
 

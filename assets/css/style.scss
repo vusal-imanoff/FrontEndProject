@@ -2,6 +2,7 @@
 @import '_shop.scss';
 @import '_login.scss';
 @import '_contactus.scss';
+@import '_productdetails.scss';
 
 
 
@@ -504,8 +505,8 @@ body {
                     .fruit_dropdown {
                         position: absolute;
                         width: 300px;
-                        left: 285px;
-                        top: -10px;
+                        left: 278px;
+                        top: -11px;
                         height: 70vh;
                         border-radius: 5px;
                         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -536,8 +537,8 @@ body {
                     .beverages_dropdown {
                         position: absolute;
                         width: 300px;
-                        left: 285px;
-                        top: -142px;
+                        left: 278px;
+                        top: -144px;
                         height: 70vh;
                         border-radius: 5px;
                         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -2028,9 +2029,7 @@ body {
 }
 
 .slider_product {
-    .container {
-    }
-
+    
     .product_top {
         margin-bottom: 30px;
 
