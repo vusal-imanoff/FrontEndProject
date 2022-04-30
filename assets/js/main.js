@@ -336,7 +336,9 @@ $(document).on("click",".plus_cart",function (event) {
   localStorage.setItem('basket', JSON.stringify(basket))
   CountBasket();
   ShowBasket();
+  DeleteProduct();
 });
+
 $(document).on("click",".minus_cart",function (event) {
   event.preventDefault();
   let basket = JSON.parse(localStorage.getItem('basket'))
@@ -349,6 +351,7 @@ $(document).on("click",".minus_cart",function (event) {
   localStorage.setItem('basket', JSON.stringify(basket))
   CountBasket();
   ShowBasket();
+  DeleteProduct();
 });
 
 let btnbtn = document.querySelectorAll('.abtn_click');
@@ -387,6 +390,28 @@ var list =document.getElementById("list")
 if(list!=null){
   ShowBasket();
 }
+
+function DeleteProduct(){
+  let delete_product=document.querySelectorAll(".delete_prod")
+  console.log("Delete product")
+  for (let del of delete_product) {
+    del.addEventListener('click',function(e){
+    let basket = JSON.parse(localStorage.getItem('basket'))
+    let div=e.target.parentElement.parentElement.parentElement;
+    let del_id=e.target.parentElement.parentElement.previousElementSibling.previousElementSibling.children[2].id;
+    console.log(del_id);
+    div.remove();  
+      let existid=basket.find(pid=>pid.ID==del_id);
+      if(existid!=undefined){
+        basket = basket.filter(p=>p.ID != del_id)
+        localStorage.setItem("basket", JSON.stringify(basket))
+        checkViewEmpty()
+      }
+    })   
+  } 
+}
+DeleteProduct()
+
 function ShowBasket() {
   
   let basket = JSON.parse(localStorage.getItem('basket'))
@@ -424,17 +449,24 @@ function ShowBasket() {
   
   
   }
-  if (basket.length === 0) {
-    document.getElementById("emptybasket").classList.remove("d-none")
-    document.getElementById("fullbaskbet").classList.add("d-none")
-  }
-  else {
-    document.getElementById("emptybasket").classList.add("d-none")
-    document.getElementById("fullbasket").classList.remove("d-none")
-  
-  }
 }
 
+$(document).ready(function() {   //same as: $(function() { 
+  checkViewEmpty()
+});
 
+
+function checkViewEmpty() {
+  let basket = JSON.parse(localStorage.getItem("basket"))
+  console.log(basket)
+  if (basket.length === 0) {
+    document.getElementById("emptybasket").classList.remove("d-none");
+    document.getElementById("fullbasket").classList.add("d-none")
+  }
+  else {
+    document.getElementById("emptybasket").classList.add("d-none");
+    document.getElementById("fullbasket").classList.remove("d-none");
+  }
+}
 
 
