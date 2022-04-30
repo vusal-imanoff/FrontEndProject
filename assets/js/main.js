@@ -23,7 +23,6 @@ var span_menu = document.getElementsByClassName("close_menu")[0];
 
 btn_menu.onclick = function () {
   modal_menu.style.display = "block";
-  console.log('salam');
 }
 span_menu.onclick = function () {
   modal_menu.style.display = "none";
@@ -224,7 +223,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#open_menu").click(function () {
-    $(".header_menu").css('display','block')
+    $(".header_menu").css('display', 'block')
     $(".header_menu").addClass('animate__fadeInLeft')
     $(".header_menu").removeClass('animate__fadeOutLeft')
 
@@ -239,7 +238,7 @@ $(document).ready(function () {
   });
   $("#category_icon").click(function (event) {
     event.preventDefault();
-    $(".header_menu").css('display','block')
+    $(".header_menu").css('display', 'block')
     $(".header_menu").addClass('animate__fadeInLeft')
     $(".header_menu").removeClass('animate__fadeOutLeft')
   });
@@ -286,43 +285,156 @@ $('.product_bottom').slick({
 
 let buttons = document.querySelectorAll('.tab_links a')
 let content = document.querySelectorAll('.tab_content .tabix')
-
-console.log(content)
 for (let btn of buttons) {
-    btn.addEventListener('click', function (e) {
-        e.preventDefault()
-        let active = document.querySelector(".active");
-        active.classList.remove("active")
-        this.classList.add('active')
+  btn.addEventListener('click', function (e) {
+    e.preventDefault()
+    let active = document.querySelector(".active");
+    active.classList.remove("active")
+    this.classList.add('active')
 
-        let index = this.getAttribute('data-index')
+    let index = this.getAttribute('data-index')
 
-        for (let div of content) {
-            if (div.getAttribute('data-index') == index) {
-                div.classList.remove('d-none')
-            }
-            else {
-                div.classList.add('d-none')
-            }
-        }
-    })
+    for (let div of content) {
+      if (div.getAttribute('data-index') == index) {
+        div.classList.remove('d-none')
+      }
+      else {
+        div.classList.add('d-none')
+      }
+    }
+  })
 }
 
 $(document).ready(function () {
   $(".plus").click(function (event) {
     event.preventDefault();
-    let count=$(".input_text").val();
+    let count = $(".input_text").val();
     count++;
     $(".input_text").val(count);
   });
   $(".minus").click(function (event) {
     event.preventDefault();
-    let count=$(".input_text").val();
-    if(count>1){
+    let count = $(".input_text").val();
+    if (count > 1) {
       count--;
     }
     $(".input_text").val(count)
   });
 });
+
+/// add to cart
+
+if (localStorage.getItem('basket') === null) {
+  localStorage.setItem('basket', JSON.stringify([]));
+}
+$(document).on("click",".plus_cart",function (event) {
+  event.preventDefault();
+  let basket = JSON.parse(localStorage.getItem('basket'))
+  let id=$(this).attr("id")
+  let prod_count = basket.find(prod => prod.ID == id)
+  prod_count.Count+=1;
+  localStorage.setItem('basket', JSON.stringify(basket))
+  CountBasket();
+  ShowBasket();
+});
+$(document).on("click",".minus_cart",function (event) {
+  event.preventDefault();
+  let basket = JSON.parse(localStorage.getItem('basket'))
+  let id=$(this).attr("data-id")
+  let prod_count = basket.find(prod => prod.ID == id)
+  if(prod_count.Count>1){
+
+    prod_count.Count--;
+  }
+  localStorage.setItem('basket', JSON.stringify(basket))
+  CountBasket();
+  ShowBasket();
+});
+
+let btnbtn = document.querySelectorAll('.abtn_click');
+for (let btns of btnbtn) {
+  btns.addEventListener('click', function (event) {
+    let basket = JSON.parse(localStorage.getItem('basket'))
+    let id = event.target.parentElement.parentElement.parentElement.id;
+    let prod_name = event.target.parentElement.parentElement.previousElementSibling.children[1].children[0].children[0].innerText;
+    let prod_img = event.target.parentElement.parentElement.previousElementSibling.children[0].children[0].children[0].src;
+    let prod_price = Number(event.target.parentElement.parentElement.previousElementSibling.children[1].children[3].children[1].children[0].innerText);
+     let prod_count = basket.find(prod => prod.ID == id)
+    if (prod_count == undefined) {
+      basket.push({
+        ID: id,
+        Name: prod_name,
+        Price: prod_price,
+        Image: prod_img,
+        Count: 1
+      })
+    }
+    else {
+      prod_count.Count += 1;
+    }
+    localStorage.setItem('basket', JSON.stringify(basket))
+    CountBasket();
+  })
+}
+
+function CountBasket() {
+  let basket = JSON.parse(localStorage.getItem('basket'))
+  let count = basket.length;
+  document.getElementById('prod_count').innerHTML = count;
+}
+CountBasket();
+var list =document.getElementById("list")
+if(list!=null){
+  ShowBasket();
+}
+function ShowBasket() {
+  
+  let basket = JSON.parse(localStorage.getItem('basket'))
+  let pr='';
+  for (let product of basket) {
+    pr += `
+    <div class="pr-box d-flex justify-content-between align-items-center">
+                      <div class="col-lg-1">
+                          <img class="img-fluid"
+                              src="${product.Image}"
+                              alt="">
+                      </div>
+                      <div class="prod_name_temp col-lg-6">
+                          <h4>${product.Name}</h4>
+                      </div>
+                      <div class="col-lg-1">
+                          <span>${product.Price}</span>
+                      </div>
+                      <div class="counter col-lg-2 d-flex justify-content-evenly  align-items-center">
+                          <div data-id="${product.ID}" class="count_btn minus_cart"><i class="fa-solid fa-minus"></i></div>
+                          <input type="text" id="input_val" class="input_text_cart qty text" value="${product.Count}"
+                              placeholder="" inputmode="numeric">
+                          <div id="${product.ID}"  class="count_btn plus_cart"><i  class="fa-solid fa-plus"></i></div>
+                      </div>
+                      <div class="col-lg-1">
+                          <span class="total_prie">${(product.Count*product.Price).toFixed(2)}</span>
+                      </div>
+                      <div class="col-lg-1">
+                          <span class="delete_prod"><i class="fa-solid fa-trash"></i></span>
+                      </div>
+
+    </div>`
+  
+    document.getElementById("list").innerHTML=pr;
+  
+  
+  }
+  if (basket.length === 0) {
+    document.getElementById("emptybasket").classList.remove("d-none")
+    document.getElementById("fullbaskbet").classList.add("d-none")
+  }
+  else {
+    document.getElementById("emptybasket").classList.add("d-none")
+    document.getElementById("fullbasket").classList.remove("d-none")
+  
+  }
+}
+
+
 
 

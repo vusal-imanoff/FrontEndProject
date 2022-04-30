@@ -1,8 +1,10 @@
 @import '_responsive.scss';
 @import '_shop.scss';
 @import '_login.scss';
+@import '_cart.scss';
 @import '_contactus.scss';
 @import '_productdetails.scss';
+
 
 
 
@@ -211,14 +213,17 @@ body {
 
 .header_three {
     .header_three_left {
-        img {
-            width: 164px;
-        }
-
-        p {
-            font-size: 11px;
-            opacity: 0.5;
-            margin-top: 2px;
+        a{
+            img {
+                width: 100%;
+            }
+    
+            span {
+                font-size: 11px;
+                opacity: 0.5;
+                margin-top: 2px;
+                color: #3e445a9d;
+            }
         }
     }
 
@@ -439,7 +444,7 @@ body {
         }
 
         .cart_price {
-            a {
+            span {
                 color: #3e445a;
             }
         }

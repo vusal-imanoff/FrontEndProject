@@ -1,0 +1,100 @@
+.empty {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+
+    .emptycart {
+        width: 30%;
+
+        .iconsvg {
+            margin: 0 auto;
+            left: 50%;
+            width: 10rem;
+            height: 10rem;
+            background-color: #eaecef;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+
+            svg {
+                height: 50%;
+                width: 50%;
+                bottom: 0;
+
+                .c-02 {
+                    background-color: red;
+                }
+
+            }
+        }
+
+        .textempty {
+            margin: 30px 0;
+            color: #ed174a;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        p {
+            a {
+                border: 1px solid #233A95;
+                padding: 15px 25px;
+                color: #fff;
+                background-color: #233A95;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+.full {
+    .template {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #71778e4c;
+        .name {
+            .productname {
+                margin-left: 40px;
+            }
+        }
+        .countprod{
+        }
+    }
+
+    .full_left {
+       .pr-box{
+        border-bottom: 1px solid #71778e4c;
+        .prod_name_temp{
+            h4{
+                font-size: 16px;
+            }
+        }
+        .counter {
+            input {
+                width: 1.625rem;
+                height: 1.75rem;
+                pointer-events: none;
+                text-align: center;
+                border: none;
+            }
+
+            .count_btn {
+                padding: 0.375rem 0.6rem;
+                border-radius: 50%;
+                background-color: #71778e4c;
+                cursor: pointer;
+            }
+        }
+       }
+       .delete_prod{
+           i{
+               cursor: pointer;
+               color: red;
+           }
+           margin-left: 20px;
+       }
+    }
+}
