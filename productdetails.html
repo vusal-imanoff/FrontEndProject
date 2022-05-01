@@ -151,7 +151,7 @@
                         </div>
                         <div class="basket_btn">
                             <a href="cart.html" class=" d-flex justify-content-end align-items-center">
-                                <div class="cart_price">
+                                <div id="prod_price" class="cart_price">
                                     <span class="currency_symbol">$</span>
                                     <span class="price">0.00</span>
                                 </div>
@@ -325,7 +325,7 @@
                         <i id="open_menu" class="fa-solid fa-bars"></i>
                     </div>
                     <div class="mobile_center col-4">
-                        <a href="">
+                        <a href="index.html">
                             <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png"
                                 alt="">
                         </a>
@@ -334,10 +334,11 @@
                         <div class="basket_btn d-flex justify-content-end align-items-center">
 
                             <div class="cart_icon">
-                                <i class="fa-solid fa-bag-shopping">
-                                    <span class="count">0</span>
-                                </i>
-
+                                <a href="cart.html">
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span id="mobile_prod_count" class="count">0</span>
+                                    </i>
+                                   </a>
                             </div>
                             </a>
                         </div>
@@ -659,7 +660,22 @@
     <!-- end header section -->
 
 
-
+    <section class="prod_mobile">
+        <div class="container_fluid">
+            <div class="process d-flex justify-content-between align-items-center">
+                <div class="counter">
+                    <div class="count_btn minus"><i class="fa-solid fa-minus"></i></div>
+                    <input type="text" id="quantity_626872a971146" class="input_text qty text"
+                         value="1" placeholder=""
+                        inputmode="numeric">
+                    <div class="count_btn plus"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="add">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class=" section_prod_details py-5">
         <div class="container">
@@ -680,8 +696,8 @@
                         <span class="border_right"></span>
                         <li>SKU: <strong>ZU49VOR</strong></li>
                     </ul>
-                    <div class="prod_details_content d-flex">
-                        <div class="content_left col-lg-5">
+                    <div class="prod_details_content">
+                        <div class="content_left col-lg-5 col-12">
                             <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-768x691.jpg"
                                 alt="">
                             <div class="img_catalog">
@@ -706,7 +722,7 @@
                                 <span class="comment"> RECOMMENDED</span>
                             </div>
                         </div>
-                        <div class="content_center col-lg-3">
+                        <div class="content_center col-lg-3 col-12 ">
                             <div class="price ">
                                 <span class="old"><del>$9.35</del></span>
                                 <span class="new">$7.25</span>
@@ -719,7 +735,7 @@
                                     tincidunt. Class aptent taciti sociosqu ad litora torquent</span>
                             </div>
                             <div class="process d-flex justify-content-between align-items-center">
-                                <div class="counter d-flex">
+                                <div class="counter">
                                     <div class="count_btn minus"><i class="fa-solid fa-minus"></i></div>
                                     <input type="text" id="quantity_626872a971146" class="input_text qty text"
                                          value="1" placeholder=""
@@ -789,8 +805,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="content_right col-lg-3 mx-5">
-                            <div class="covid">
+                        <div class="content_right col-lg-3 col-12">
+                            <div class="covid mb-3">
                                 <span>Covid-19 Info: We keep delivering.</span>
                             </div>
                             <div class="delivery">

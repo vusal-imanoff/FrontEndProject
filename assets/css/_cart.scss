@@ -5,7 +5,7 @@
     background-color: #fff;
 
     .emptycart {
-        width: 30%;
+        width: 50%;
 
         .iconsvg {
             margin: 0 auto;
@@ -53,7 +53,7 @@
 
 .full {
     .template {
-        padding-bottom: 20px;
+       
         border-bottom: 1px solid #71778e4c;
         .name {
             .productname {
@@ -95,5 +95,69 @@
            }
            margin-left: 20px;
        }
+    }
+    .full_right{
+           border: 1px solid #71778e4c;   
+           border-radius: 5px;
+           margin-left: 0px;
+           .right_name{
+              h6{
+                font-weight: bold;
+              }
+              border-bottom: 1px solid #71778e4c;
+           }  
+           .right_subtotal{
+               padding: 10px 0;
+              border-bottom: 1px solid #71778e4c;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               .subtotal_left{
+                   font-weight: bold;
+               }
+           }
+           .right_shipping{
+               padding: 10px 0;
+               border-bottom: 1px solid #71778e4c;
+               p{
+                   font-size: 13px;
+               }
+               .change_address{
+                   display: block;
+                   color: #3998dc;
+                   font-size: 13px;
+                   margin-top: 20px;
+               }
+               .shipping_left{
+                   font-weight: bold;
+               }
+           }
+           .right_total{
+               padding: 10px 0;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+              border-bottom: 1px solid #71778e4c;
+            .total_right{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .total_left{
+                font-weight: bold;
+            }
+           }
+           
+           .totallink{
+               margin-top: 20px;
+            width: 100%;
+            border: 1px solid #ed174a;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ed174a;
+            border-radius: 10px;
+            a{
+                color: #fff;
+            }
+           }
     }
 }

@@ -152,9 +152,9 @@
                         </div>
                         <div class="basket_btn">
                             <a href="cart.html" class=" d-flex justify-content-end align-items-center">
-                                <div class="cart_price">
+                                <div id="prod_price"  class="cart_price">
                                     <span class="currency_symbol">$</span>
-                                    <span class="price">0.00</span>
+                                    <span  class="price">0.00</span>
                                 </div>
                                 <div class="cart_icon">
                                     <i class="fa-solid fa-bag-shopping">
@@ -326,7 +326,7 @@
                         <i id="open_menu" class="fa-solid fa-bars"></i>
                     </div>
                     <div class="mobile_center col-4">
-                        <a href="">
+                        <a href="index.html">
                             <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png"
                                 alt="">
                         </a>
@@ -335,10 +335,11 @@
                         <div class="basket_btn d-flex justify-content-end align-items-center">
 
                             <div class="cart_icon">
-                                <i class="fa-solid fa-bag-shopping">
-                                    <span class="count">0</span>
-                                </i>
-
+                                <a href="">
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span id="mobile_prod_count" class="count">0</span>
+                                    </i>
+                                </a>
                             </div>
                             </a>
                         </div>
@@ -690,28 +691,59 @@
             </p>
         </div>
     </section>
-    <section id="fullbasket" class="full p-5">
+    <section id="fullbasket" class="full py-5">
         <div class="container">
             <div class="template col-lg-9 d-flex justify-content-between ">
-                <div class="name col-lg-7   ">
+                <div class="name col-lg-7 col-2">
                     <span class="productname">Product</span>
-                </div><div class="col-lg-1">
-                    <span >Price</span>
-                </div><div class="countprod col-lg-1">
+                </div>
+                <div class="prodprice col-lg-1">
+                    <span>Price</span>
+                </div>
+                <div class="countprod col-lg-1 col-2">
                     <span>Quantity</span>
-                </div><div class="col-lg-1">
+                </div>
+                <div class="prodtotal col-lg-1">
                     <span>Subtotal</span>
                 </div>
-                <div class="col-lg-1">
+                <div class="prodemptydiv col-lg-1">
                 </div>
             </div>
-            
-            
             <div class="row">
-                <div id="list" class="full_left py-3 col-lg-9 ">
-                   
+                <div id="list" class="full_left py-3 col-lg-9 col-12 ">
+
                 </div>
-                <div class="full_right"></div>
+                <div class="full_right col-lg-3 p-3 col-12">
+                    <div class="right_name">
+                        <h6>CART TOTALS</h6>
+                    </div>
+                    <div class="right_subtotal">
+                        <div class="subtotal_left">
+                            <span>Subtotal</span>
+                        </div>
+                        <div id="subtotal_num" class="subtotal_right">0</div>
+                    </div>
+                    <div class="right_shipping d-flex justify-content-between align-items-center">
+                        <div class="shipping_left ">
+                            <span>Shipping</span>
+                        </div>
+                        <div class="shipping_right text-end">
+                            <p onclick="calculateShipping(true)"><label for="flat-rate">Flat rate: <span style="color: #d51243;">$5.00</span></label> 
+                                <input type="radio"  name="true" id="flat-rate" class="delivery_choice" value="Free sheeping" checked></p>
+                            <p onclick="calculateShipping(false)" ><label for="freeshipping" >Free Shipping</label> <input id="freeshipping" class="delivery_choice" type="radio" name="true"></p>
+                            <p onclick="calculateShipping(false)"><label for="localpickup">Local pickup</label> <input id="localpickup" class="delivery_choice" type="radio" name="true"></p>
+                            <p><label for="">Shipping to <span style="font-weight: bolder;">AL</span>.</label></p>
+                            <a class="change_address" href="">Change address</a>
+                        </div>
+                    </div>
+                    <div class="right_total">
+                        <div class="total_left"><span>Total</span></div>
+                        <div id="total_num" class="total_right">0</div>
+                    </div>
+                    <div class="totallink">
+                        <a href="">Proceed to checkout</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

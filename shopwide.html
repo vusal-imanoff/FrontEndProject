@@ -152,7 +152,7 @@
                         </div>
                         <div class="basket_btn">
                             <a href="cart.html" class=" d-flex justify-content-end align-items-center">
-                                <div class="cart_price">
+                                <div id="prod_price" class="cart_price">
                                     <span class="currency_symbol">$</span>
                                     <span class="price">0.00</span>
                                 </div>
@@ -326,7 +326,7 @@
                         <i id="open_menu" class="fa-solid fa-bars"></i>
                     </div>
                     <div class="mobile_center col-4">
-                        <a href="">
+                        <a href="index.html">
                             <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/bacola-logo-mobile.png"
                                 alt="">
                         </a>
@@ -335,10 +335,11 @@
                         <div class="basket_btn d-flex justify-content-end align-items-center">
 
                             <div class="cart_icon">
-                                <i class="fa-solid fa-bag-shopping">
-                                    <span class="count">0</span>
-                                </i>
-
+                                <a href="cart.html">
+                                    <i class="fa-solid fa-bag-shopping">
+                                        <span id="mobile_prod_count" class="count">0</span>
+                                    </i>
+                                   </a>
                             </div>
                             </a>
                         </div>
@@ -1122,19 +1123,19 @@
 
                     <div class="section_right_product">
                         <div class="row">
-                            <div class="right_product_box col-lg-2-5     col-6">
+                            <div id="1" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
                                                 alt="">
                                         </a>
-                                        <span class="view_percent">19%</span>
+                                        <span class="view_percent">23%</span>
+                                        <span class="view_comment">RECOMMENDED</span>
                                     </div>
-
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">All Natural Italian-Style Chicken Meatballs</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1143,33 +1144,44 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star noactive"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$9.35</del></span>
+                                            <span>$<span class="price_new">7.25</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="2" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-60-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
+            
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1178,33 +1190,44 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star noactive"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$4.29</del></span>
+                                            <span>$<span class="price_new">3.29</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="3" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+            
+                                        <h3>
+                                            <a href="">Field Roast Chao Cheese Creamy Original</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1213,33 +1236,45 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$24.00</del></span>
+                                            <span>
+                                                $
+                                                <span class="price_new">19.50</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="4" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-45-346x310.jpg"
                                                 alt="">
                                         </a>
-                                        <span class="view_percent">19%</span>
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+            
+                                        <h3>
+                                            <a href="">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1248,33 +1283,46 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star noactive"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_new">$7.25</span>
+                                            <span style="color: #000;">-</span>
+                                            <span>$<span class="price_new">49.99</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a href="javascript:void(0)"><span class="spanwidth">View
+                                            products</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="5" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-59-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
+                                        <span class="view_organic">ORGANIC</span>
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">Blue Diamond Almonds Lightly Salted</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1283,21 +1331,31 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$11.68</del></span>
+                                            <span>$<span class="price_new">10.58</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="6" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
@@ -1306,7 +1364,7 @@
                                         </a>
                                         <span class="view_percent">19%</span>
                                     </div>
-
+                                    
                                     <div class="view_bottom">
                                         <h3 class="last_box">
                                             <a href="">Blueberries – 1 Pint Package</a>
@@ -1324,27 +1382,38 @@
                                         </div>
                                         <div class="view_price">
                                             <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span>$<span class="price_new">3.99</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="7" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-55-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
+                                        <span class="view_organic">ORGANIC</span>
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href=""> Lightly Salted Blue Diamond Almonds</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1353,33 +1422,43 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$12.49</del></span>
+                                            <span>$<span class="price_new">8.99</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="8" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
                                                 alt="">
                                         </a>
-                                        <span class="view_percent">19%</span>
+                                        <span class="view_percent">23%</span>
+                                        <span class="view_comment">RECOMMENDED</span>
                                     </div>
-
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">All Natural Italian-Style Chicken Meatballs</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1388,33 +1467,44 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star noactive"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$9.35</del></span>
+                                            <span>$<span class="price_new">7.25</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="9" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-60-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
+            
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1423,33 +1513,44 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star noactive"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$4.29</del></span>
+                                            <span>$<span class="price_new">3.29</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="10" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-46-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+            
+                                        <h3>
+                                            <a href="">Field Roast Chao Cheese Creamy Original</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1458,33 +1559,45 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$24.00</del></span>
+                                            <span>
+                                                $
+                                                <span class="price_new">19.50</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="11" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
                                                 alt="">
                                         </a>
-                                        <span class="view_percent">19%</span>
+                                        <span class="view_percent">23%</span>
+                                        <span class="view_comment">RECOMMENDED</span>
                                     </div>
-
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">All Natural Italian-Style Chicken Meatballs</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1493,33 +1606,44 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star noactive"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$9.35</del></span>
+                                            <span>$<span class="price_new">7.25</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="12" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-60-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
+            
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1528,33 +1652,44 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star noactive"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$4.29</del></span>
+                                            <span>$<span class="price_new">3.29</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="13" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-55-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
+                                        <span class="view_organic">ORGANIC</span>
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href=""> Lightly Salted Blue Diamond Almonds</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1563,33 +1698,43 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$12.49</del></span>
+                                            <span>$<span class="price_new">8.99</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="14" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg"
                                                 alt="">
                                         </a>
-                                        <span class="view_percent">19%</span>
+                                        <span class="view_percent">23%</span>
+                                        <span class="view_comment">RECOMMENDED</span>
                                     </div>
-
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">All Natural Italian-Style Chicken Meatballs</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1598,33 +1743,44 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star noactive"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$9.35</del></span>
+                                            <span>$<span class="price_new">7.25</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="right_product_box col-lg-2-5 col-6">
+                            <div id="15" class="right_product_box col-lg-2-5 col-6">
                                 <div class="product_main">
                                     <div class="view_img">
                                         <a href="">
-                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-58-346x310.jpg"
+                                            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-59-346x310.jpg"
                                                 alt="">
                                         </a>
                                         <span class="view_percent">19%</span>
+                                        <span class="view_organic">ORGANIC</span>
                                     </div>
-
+            
                                     <div class="view_bottom">
-                                        <h3 class="last_box">
-                                            <a href="">Blueberries – 1 Pint Package</a>
+                                        <h3>
+                                            <a href="">Blue Diamond Almonds Lightly Salted</a>
                                         </h3>
                                         <div class="view_details">
                                             <span class="stock">IN STOCK</span>
@@ -1633,18 +1789,28 @@
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
-                                            <i class="fa-solid fa-star noactive"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                             <span class="raiting">1</span>
                                         </div>
                                         <div class="view_price">
-                                            <span class="price_old"><del>$4.49</del></span>
-                                            <span class="price_new">$3.99</span>
+                                            <span class="price_old"><del>$11.68</del></span>
+                                            <span>$<span class="price_new">10.58</span></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="view_product_position">
-                                    <a href=""><span>Add to cart</span></a>
+                                    <a class="abtn_click" href="javascript:void(0)"><span>Add to cart</span></a>
+                                </div>
+                                <div class="view_product_maximize">
+                                    <ul>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-maximize"></i></a>
+                                        </li>
+                                        <li>
+                                            <a  href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
